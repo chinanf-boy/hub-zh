@@ -1,17 +1,16 @@
+Hub 删除(1)删除 Github 上现有的存储库.= =
 
-Hub删除(1)删除Github上现有的存储库.= =
+## 命令简介
 
-## SYNOPSIS
+"hub 删除"[Y][<organization>/]<NAME>
 
-"hub删除"[Y][<organization>/]<NAME>
+## 选项
 
-## OPTIONS
+- y,是:跳过确认提示并立即删除存储库.
 
--   y,是:跳过确认提示并立即删除存储库.
+- [<ORGANIZATION>/]<NAME>Github 上存储库的名称.
 
--   [<ORGANIZATION>/]<NAME>Github上存储库的名称.
-
-## EXAMPLES
+## 例子
 
 ```
 $ hub delete recipes
@@ -21,6 +20,6 @@ $ hub delete sinatra/recipes
 [ repo deleted in GitHub organization ]
 ```
 
-## SEE ALSO
+## 更多
 
 hub(1),hub(1)

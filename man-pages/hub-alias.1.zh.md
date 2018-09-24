@@ -1,16 +1,15 @@
+Hub -别名(1)显示了用于包装 Git 的 shell 指令.= =
 
-Hub -别名(1)显示了用于包装Git的shell指令.= =
+## 命令简介
 
-## SYNOPSIS
+"hub 别名"[的 S][<shell>]
 
-"hub别名"[的S][<shell>]
+## 选项
 
-## OPTIONS
+- s:适用于"EVAL"的输出外壳脚本.
 
--   s:适用于"EVAL"的输出外壳脚本.
+- <SHELL>指定 shell 的类型(默认值为"$shell"环境变量).
 
--   <SHELL>指定shell的类型(默认值为"$shell"环境变量).
-
-## SEE ALSO
+## 更多
 
 轮毂(1)

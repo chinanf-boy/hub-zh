@@ -2,11 +2,11 @@ Hub 创建(1)在 Github 上创建一个新的存储库,并为它添加一个 Git
 
 = =
 
-## SYNOPSIS
+## 命令简介
 
-"hub 创建"[PoC][‐d <description>] [h<HOMEPAGE>][<有机化>/]<NAME>]
+"hub 创建"[PoC][-d <description>] [h<HOMEPAGE>][<有机化>/]<NAME>]
 
-## OPTIONS
+## 选项
 
 - P:创建一个私有存储库.
 
@@ -24,18 +24,18 @@ Hub 创建(1)在 Github 上创建一个新的存储库,并为它添加一个 Git
   Optionally, create the repository within <ORGANIZATION>.
   ```
 
-## EXAMPLES
+## 例子
 
 ```
 $ hub create
 [ repo created on GitHub ]
-> git remote add ‐f origin git@github.com:USER/REPO.git
+> git remote add -f origin git@github.com:USER/REPO.git
 
 $ hub create sinatra/recipes
 [ repo created in GitHub organization ]
-> git remote add ‐f origin git@github.com:sinatra/recipes.git
+> git remote add -f origin git@github.com:sinatra/recipes.git
 ```
 
-## SEE ALSO
+## 更多
 
 hub(1),hub(1)

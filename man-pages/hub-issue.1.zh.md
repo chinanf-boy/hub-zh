@@ -1,9 +1,9 @@
-# hub‐issue(1) ‐‐ Manage GitHub issues for the current project.
+# hub-issue(1) -- Manage GitHub issues for the current project.
 
-## SYNOPSIS
+## 命令简介
 
-"枢纽问题"[A<ASSIGNEE>][‐c <creator>] ["@"<USER>][‐s <state>] [f<FORMAT>][‐m <milestone>] [l<LABELS>][‐d <date>]
-[o \< SORTTKEY > > \[^ ^ \]][‐l <limit>]"hub 发行"[英国石油公司][‐m <message>|‐f <file>] [编辑][‐a <users>] [米<MILESTONE>][‐l <labels>]"hub 发行"标签[彩色]
+"枢纽问题"[A<ASSIGNEE>][-c <creator>] ["@"<USER>][-s <state>] [f<FORMAT>][-m <milestone>] [l<LABELS>][-d <date>]
+[o \< SORTTKEY > > \[^ ^ \]][-l <limit>]"hub 发行"[英国石油公司][-m <message>|-f <file>] [编辑][-a <users>] [米<MILESTONE>][-l <labels>]"hub 发行"标签[彩色]
 
 ## 命令
 
@@ -13,12 +13,12 @@
 
 - *标签*列出这个存储库中可用的标签.
 
-## OPTIONS
+## 选项
 
 - A、受让人<ASSIGNEE>只显示分配给的问题<ASSIGNEE>.
 
   ```
-  When opening an issue, this can be a comma‐separated list  of
+  When opening an issue, this can be a comma-separated list  of
   ```
 
   人们分配给新的问题.
@@ -46,13 +46,13 @@
 
   %l: colored labels
 
-  %L: raw, comma‐separated labels
+  %L: raw, comma-separated labels
 
   %b: body
 
   %au: login name of author
 
-  %as: comma‐separated list of assignees
+  %as: comma-separated list of assignees
 
   %Mn: milestone number
 
@@ -66,7 +66,7 @@
   字符串为零.
 
   ```
-  %cD: created date‐only (no time of day)
+  %cD: created date-only (no time of day)
 
   %cr: created date, relative
 
@@ -74,7 +74,7 @@
 
   %cI: created date, ISO 8601 format
 
-  %uD: updated date‐only (no time of day)
+  %uD: updated date-only (no time of day)
 
   %ur: updated date, relative
 
@@ -104,7 +104,7 @@
 - L,标签<LABELS>只显示带有某些标签的问题.
 
   ```
-  When  opening  an issue, add a comma‐separated list of labels
+  When  opening  an issue, add a comma-separated list of labels
   ```
 
   对此问题.

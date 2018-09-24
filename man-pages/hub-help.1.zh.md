@@ -1,13 +1,13 @@
 Hub 帮助(1)显示命令的帮助页.= =
 
-## SYNOPSIS
+## 命令简介
 
-"hub帮助"hub"hub帮助"<COMMAND>"hub帮助"hub<COMMAND>
+"hub 帮助"hub"hub 帮助"<COMMAND>"hub 帮助"hub<COMMAND>
 [普通文本]
 
-## OPTIONS
+## 选项
 
-- hub<COMMAND>使用此格式查看对存在的 Git 命令的hub扩展的帮助.
+- hub<COMMAND>使用此格式查看对存在的 Git 命令的 hub 扩展的帮助.
 
 - 普通文本:跳过人页查找机制并显示普通帮助文本.
 
@@ -19,6 +19,6 @@ Hub 帮助(1)显示命令的帮助页.= =
 
 在没有"人"的系统中,相同的帮助页用".txt"后缀查找.
 
-## SEE ALSO
+## 更多
 
 hub(1),Git 帮助(1)

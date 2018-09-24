@@ -1,10 +1,10 @@
 Hub 浏览(1)在 Web 浏览器中打开 Github 存储库.= =
 
-## SYNOPSIS
+## 命令简介
 
 "hub 浏览"[UC][<user>/]<REPOSITORY>\[-][<SUBPAGE>]
 
-## OPTIONS
+## 选项
 
 - u:打印 URL 而不是打开它.
 
@@ -14,13 +14,13 @@ Hub 浏览(1)在 Web 浏览器中打开 Github 存储库.= =
 
 - <SUBPAGE>一个"wiki","提交","问题",或其他(默认:"树").
 
-## EXAMPLES
+## 例子
 
 ```
 $ hub browse
 > open https://github.com/REPO
 
-$ hub browse ‐‐ issues
+$ hub browse -- issues
 > open https://github.com/REPO/issues
 
 $ hub browse jingweno/gh
@@ -30,6 +30,6 @@ $ hub browse gh wiki
 > open https://github.com/USER/gh/wiki
 ```
 
-## SEE ALSO
+## 更多
 
 hub 比较(1),hub(1)

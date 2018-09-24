@@ -1,18 +1,17 @@
+hub‐checkout(1) -- 签到-Checkout 提交请求的 head 作为一个本地分支
 
-hub签出(1)-检查拉请求的头作为LO分支.= =
+## 命令简介
 
-## SYNOPSIS
+‘hub checkout‘ <PULLREQ‐URL> [<BRANCH>]
 
-"hub签出"\< PulrReq URL >[<BRANCH>]
-
-## EXAMPLES
+## 例子
 
 ```
 $ hub checkout https://github.com/jingweno/gh/pull/73
-> git fetch origin pull/73/head:jingweno‐feature
-> git checkout jingweno‐feature
+> git fetch origin pull/73/head:jingweno-feature
+> git checkout jingweno-feature
 ```
 
-## SEE ALSO
+## 更多
 
-hub合并(1)、hubAM(1)、hub(1)、GIT校验(1)
+[hub‐merge(1)](hub‐merge.1.zh.md), [hub‐am(1)](hub‐am.1.zh.md), [hub(1)](hub.1.zh.md), git‐checkout(1)

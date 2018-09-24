@@ -1,11 +1,11 @@
-# hub‐pull‐request(1) ‐‐ Create a GitHub pull request.
+# hub-pull-request(1) -- Create a GitHub pull request.
 
-## SYNOPSIS
+## 命令简介
 
-"hub 拉动请求"[焦点][‐b <base>] [h<HEAD>][‐r <review‐ ers> ] [A<ASSIGNEES>][‐m <milestone>] [l<LABELS>]"轮毂拉动"请求<MESSAGE> [编辑]"轮毂拉动"请求<FILE>
+"hub 拉动请求"[焦点][-b <base>] [h<HEAD>][-r <review- ers> ] [A<ASSIGNEES>][-m <milestone>] [l<LABELS>]"轮毂拉动"请求<MESSAGE> [编辑]"轮毂拉动"请求<FILE>
 [编辑]"hub 拉-请求"i<ISSUE>
 
-## OPTIONS
+## 选项
 
 - f,强制:跳过未提交提交的检查.
 
@@ -37,28 +37,28 @@
 
 - L,标签<LABELS>在这个拉请求中添加一个逗号分隔的标签列表.
 
-## EXAMPLES
+## 例子
 
 ```
-$ hub pull‐request
+$ hub pull-request
 [ opens a text editor for writing title and message ]
 [ creates a pull request for the current branch ]
 
-$ hub  pull‐request  ‐‐base  OWNER:master  ‐‐head  MYUSER:my‐
+$ hub  pull-request  --base  OWNER:master  --head  MYUSER:my-
 ```
 
 分支[创建具有明确基和分支的拉请求]
 
 ```
-$ hub pull‐request ‐‐browse ‐m "My title"
+$ hub pull-request --browse -m "My title"
 [ creates a pull request with the given title and opens it in
 ```
 
 浏览器
 
 ```
-$ hub pull‐request ‐F ‐ ‐‐edit < path/to/message‐template.md
-[ further edit the title and message received on standard in‐
+$ hub pull-request -F - --edit < path/to/message-template.md
+[ further edit the title and message received on standard in-
 ```
 
 放
@@ -67,6 +67,6 @@ $ hub pull‐request ‐F ‐ ‐‐edit < path/to/message‐template.md
 
 HbbRejyIyTimeOut=<SECONDS>在"推送"(默认:9)之后,HTTP 422 继续重试的最大时间.
 
-## SEE ALSO
+## 更多
 
 hub(1)、hub 合并(1)、hub 校验(1)

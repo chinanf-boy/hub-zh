@@ -1,8 +1,8 @@
-# hub‐pr(1) ‐‐ Manage GitHub pull requests for the current project.
+# hub-pr(1) -- Manage GitHub pull requests for the current project.
 
-## SYNOPSIS
+## 命令简介
 
-"轮毂 PR"列表[的 S<STATE>][‐h <head>] [乙<BASE>]o \< SotTyKIK>[^ ]] [f<FORMAT>][‐l <limit>]"轮毂 PR"签出\< PR 号码>[<BRANCH>]
+"轮毂 PR"列表[的 S<STATE>][-h <head>] [乙<BASE>]o \< SotTyKIK>[^ ]] [f<FORMAT>][-l <limit>]"轮毂 PR"签出\< PR 号码>[<BRANCH>]
 
 ## 命令
 
@@ -10,7 +10,7 @@
 
 - *结帐*在一个新的分支中检查拉取请求的头部.
 
-## OPTIONS
+## 选项
 
 - s,s 态<STATE>过滤器拉动请求<STATE>(默认:"打开").
 
@@ -39,7 +39,7 @@
 
   %l: colored labels
 
-  %L: raw, comma‐separated labels
+  %L: raw, comma-separated labels
 
   %b: body
 
@@ -49,7 +49,7 @@
 
   %au: login name of author
 
-  %as: comma‐separated list of assignees
+  %as: comma-separated list of assignees
 
   %Mn: milestone number
 
@@ -63,7 +63,7 @@
   字符串为零.
 
   ```
-  %cD: created date‐only (no time of day)
+  %cD: created date-only (no time of day)
 
   %cr: created date, relative
 
@@ -71,7 +71,7 @@
 
   %cI: created date, ISO 8601 format
 
-  %uD: updated date‐only (no time of day)
+  %uD: updated date-only (no time of day)
 
   %ur: updated date, relative
 
@@ -86,6 +86,6 @@
 
 - l、极限<LIMIT>只显示第一个<LIMIT>问题.
 
-## SEE ALSO
+## 更多
 
 轮毂问题(1),轮毂牵引请求(1),轮毂(1)

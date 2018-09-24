@@ -1,11 +1,10 @@
+# hub-push(1) -- Push a git branch to each of the listed remotes.
 
-# hub‐push(1)  ‐‐  Push a git branch to each of the listed remotes.
+## 命令简介
 
-## SYNOPSIS
+hub 推送<REMOTE>[,<REMOTE2>…][<ref>]
 
-hub推送<REMOTE>[,<REMOTE2>…][<ref>]
-
-## EXAMPLES
+## 例子
 
 ```
 $ hub push origin,staging,qa bert_timeout
@@ -17,6 +16,6 @@ $ hub push origin
 > git push origin HEAD
 ```
 
-## SEE ALSO
+## 更多
 
 hub(1),Git -Press(1)

@@ -1,8 +1,8 @@
 Hub 释放(1)管理 Github 版本.= =
 
-## SYNOPSIS
+## 命令简介
 
-"毂释放"[包括草案][‐‐exclude‐prereleases] [l<LIMIT>]"毂释放"秀<TAG>"毂释放"创建[DPOC][‐a <file>] [米<MESSAGE>f<FILE>][‐t <target>] <TAG>"轮毂重租"编辑[<options>] <TAG>"中枢释放"下载<TAG>"中枢释放"删除<TAG>
+"毂释放"[包括草案][--exclude-prereleases] [l<LIMIT>]"毂释放"秀<TAG>"毂释放"创建[DPOC][-a <file>] [米<MESSAGE>f<FILE>][-t <target>] <TAG>"轮毂重租"编辑[<options>] <TAG>"中枢释放"下载<TAG>"中枢释放"删除<TAG>
 
 ## 命令
 
@@ -28,7 +28,7 @@ Hub 释放(1)管理 Github 版本.= =
 
 - *删除*删除指定的发行版和相关资产<TAG>.
 
-## OPTIONS
+## 选项
 
 - l,限制:只显示第一个<LIMIT>释放.
 
@@ -39,7 +39,7 @@ Hub 释放(1)管理 Github 版本.= =
 - A,附加<FILE>在这个版本中附加一个文件作为一个资产.
 
   ```
-  If	<FILE> is in the "<filename>#<text>" format, the text af‐
+  If	<FILE> is in the "<filename>#<text>" format, the text af-
   ```
 
   将"γ"字符作为资产标签.
@@ -67,7 +67,7 @@ Hub 释放(1)管理 Github 版本.= =
 
   %uA: asset upload URL
 
-  %S: state (i.e. "draft", "pre‐release")
+  %S: state (i.e. "draft", "pre-release")
 
   %sC: set color to yellow or red, depending on state
 
@@ -79,7 +79,7 @@ Hub 释放(1)管理 Github 版本.= =
 
   %as: the list of assets attached to this release
 
-  %cD: created date‐only (no time of day)
+  %cD: created date-only (no time of day)
 
   %cr: created date, relative
 
@@ -87,7 +87,7 @@ Hub 释放(1)管理 Github 版本.= =
 
   %cI: created date, ISO 8601 format
 
-  %pD: published date‐only (no time of day)
+  %pD: published date-only (no time of day)
 
   %pr: published date, relative
 
@@ -98,6 +98,6 @@ Hub 释放(1)管理 Github 版本.= =
 
 - <TAG>这个版本的 Git 标签名.
 
-## SEE ALSO
+## 更多
 
 hub(1),GIT-TAG 标签(1)

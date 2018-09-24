@@ -1,28 +1,24 @@
-hubAM(1)复制从本地 Github 拉请求提交.= =
+hub-am(1) -- 从 Github 的(pull request)提交请求复制 commit 到本地.
 
-## SYNOPSIS
+## 命令简介
 
-"轮毂 AM"[3]\< Github-URL>
+‘hub am‘ [-3] <GITHUB-URL>
 
-## OPTIONS
+## 选项
 
-- 3:(推荐)见 GIT-AM(1).
+- -3:(推荐)见 git-am(1).
 
-- \< Github-URL>:一个在 GUTHUB 上的拉请求或提交的 URL.
+- \<Github-URL>:一个在 GUTHUB 上的提交请求-pull-request 或 commit 的 URL.
 
-## EXAMPLES
-
-```
-$ hub am ‐3 https://github.com/jingweno/gh/pull/55
->	curl   https://github.com/jingweno/gh/pull/55.patch    ‐o
-```
-
-/TMP/55.P 贴
+## 例子
 
 ```
-> git am ‐3 /tmp/55.patch
+$ hub am -3 https://github.com/jingweno/gh/pull/55
+>	curl   https://github.com/jingweno/gh/pull/55.patch    -o
+/tmp/55.patch
+> git am -3 /tmp/55.patch
 ```
 
-## SEE ALSO
+## 更多
 
-轮毂应用(1),轮毂-樱桃-拾取(1),轮毂(1),GIT -AM(1)
+[hub-apply(1)](hub-apply.1.zh.md), [hub-cherry-pick(1)](hub-cherry-pick.1.zh.md), [hub(1)](hub.1.zh.md), git-am(1)

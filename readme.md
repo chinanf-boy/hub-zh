@@ -30,7 +30,7 @@
 - [x] etc
 - [ ] man-pages
     - [x] [./man-pages/hub.1.zh.md](./man-pages/hub.1.zh.md)
-    - [ ] //...
+    - [ ] 3/**
 
 ### 贡献
 
