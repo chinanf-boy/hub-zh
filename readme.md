@@ -12,7 +12,7 @@
 
 「 git + hub = github, 让git与github更容易合作 」
 
-[中文](./readme.md) | ~~[english](./readme.en.md)~~
+[中文](./readme.md) | [english](https://github.com/github/hub)
 
 
 ---
@@ -42,8 +42,24 @@
 
 ### 目录
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [git + hub = github](#git--hub--github)
+  - [安装](#%E5%AE%89%E8%A3%85)
+      - [Homebrew](#homebrew)
+      - [Windows](#windows)
+      - [Fedora Linux](#fedora-linux)
+      - [Arch Linux](#arch-linux)
+      - [集成版本](#%E9%9B%86%E6%88%90%E7%89%88%E6%9C%AC)
+      - [源-安装](#%E6%BA%90-%E5%AE%89%E8%A3%85)
+  - [别名](#%E5%88%AB%E5%90%8D)
+      - [PowerShell](#powershell)
+    - [Shell tab-补全](#shell-tab-%E8%A1%A5%E5%85%A8)
+  - [元信息](#%E5%85%83%E4%BF%A1%E6%81%AF)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
 # git + hub = github
