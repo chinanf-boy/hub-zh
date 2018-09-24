@@ -1,11 +1,11 @@
 
-集线器获取(1)在执行Git之前添加丢失的远程文件
+hub获取(1)在执行Git之前添加丢失的远程文件
 
 # fetch.
 
 ## SYNOPSIS
 
-"集线器读取"<USER>[,<USER2>...…]
+"hub读取"<USER>[,<USER2>...…]
 
 ## EXAMPLES
 
@@ -19,4 +19,4 @@ $ hub fetch ‐‐multiple jingweno mislav
 
 ## SEE ALSO
 
-集线器-远程(1),集线器(1),Git -FETCH(1)
+hub-远程(1),hub(1),Git -FETCH(1)

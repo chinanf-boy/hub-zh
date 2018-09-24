@@ -3,7 +3,7 @@ Hub删除(1)删除Github上现有的存储库.= =
 
 ## SYNOPSIS
 
-"集线器删除"[Y][<organization>/]<NAME>
+"hub删除"[Y][<organization>/]<NAME>
 
 ## OPTIONS
 
@@ -23,4 +23,4 @@ $ hub delete sinatra/recipes
 
 ## SEE ALSO
 
-集线器(1),集线器(1)
+hub(1),hub(1)

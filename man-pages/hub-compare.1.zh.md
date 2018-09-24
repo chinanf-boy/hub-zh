@@ -1,25 +1,24 @@
-
-# hub‐compare(1)	‐‐  Open  a GitHub compare page in a web browser.
+# hub‐compare(1) ‐‐ Open a GitHub compare page in a web browser.
 
 ## SYNOPSIS
 
-"集线器比较"[U][‐b <base>] [<USER>][<START>...…]<END>]
+"hub比较"[U][‐b <base>] [<USER>][<start>...…]<END>]
 
 ## OPTIONS
 
--   u:打印URL而不是打开它.
+- u:打印 URL 而不是打开它.
 
--   C,拷贝:把URL放在剪贴板上,而不是打开它.
+- C,拷贝:把 URL 放在剪贴板上,而不是打开它.
 
--   乙<BASE>基础分支进行比较.
+- 乙<BASE>基础分支进行比较.
 
--   [<START>...…]<END>指定要比较的范围的分支名称、标签名或提交SAS.<END>默认为当前分支名称.
+- [<START>...…]<END>指定要比较的范围的分支名称、标签名或提交 SAS.<END>默认为当前分支名称.
 
-    ```
-    If a range with two dots (‘A..B‘) is given, it will be trans‐
-    ```
+  ```
+  If a range with two dots (`A..B`) is given, it will be trans‐
+  ```
 
-    形成一个有三个点的范围.
+  形成一个有三个点的范围.
 
 ## EXAMPLES
 
@@ -36,4 +35,4 @@ $ hub compare ‐u jingweno feature
 
 ## SEE ALSO
 
-集线器浏览(1),集线器(1)
+hub浏览(1),hub(1)

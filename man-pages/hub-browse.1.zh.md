@@ -1,19 +1,18 @@
-
-Hub浏览(1)在Web浏览器中打开GITHUB存储库.= =
+Hub 浏览(1)在 Web 浏览器中打开 Github 存储库.= =
 
 ## SYNOPSIS
 
-"集线器浏览"[UC][<USER>/]<REPOSITORY>\[-][<SUBPAGE>]
+"hub 浏览"[UC][<user>/]<REPOSITORY>\[-][<SUBPAGE>]
 
 ## OPTIONS
 
--   u:打印URL而不是打开它.
+- u:打印 URL 而不是打开它.
 
--   C:把URL放在剪贴板中,而不是打开它.
+- C:把 URL 放在剪贴板中,而不是打开它.
 
--   [<USER>/]<REPOSITORY>默认为当前工作目录中的存储库.
+- [<USER>/]<REPOSITORY>默认为当前工作目录中的存储库.
 
--   <SUBPAGE>一个"wiki","提交","问题",或其他(默认:"树").
+- <SUBPAGE>一个"wiki","提交","问题",或其他(默认:"树").
 
 ## EXAMPLES
 
@@ -33,4 +32,4 @@ $ hub browse gh wiki
 
 ## SEE ALSO
 
-集线器比较(1),集线器(1)
+hub 比较(1),hub(1)

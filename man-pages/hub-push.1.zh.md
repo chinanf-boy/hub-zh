@@ -3,7 +3,7 @@
 
 ## SYNOPSIS
 
-集线器推送<REMOTE>[,<REMOTE2>…][<ref>]
+hub推送<REMOTE>[,<REMOTE2>…][<ref>]
 
 ## EXAMPLES
 
@@ -19,4 +19,4 @@ $ hub push origin
 
 ## SEE ALSO
 
-集线器(1),Git -Press(1)
+hub(1),Git -Press(1)

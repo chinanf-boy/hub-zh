@@ -1,5 +1,4 @@
-
-Hub分支(1)将当前项目在GITHUB上添加,并为其添加Git远程.
+Hub 分支(1)将当前项目在 Github 上添加,并为其添加 Git 远程.
 
 ## SYNOPSIS
 
@@ -7,9 +6,9 @@ Hub分支(1)将当前项目在GITHUB上添加,并为其添加Git远程.
 
 ## OPTIONS
 
--   非远程:跳过为叉添加一个Git远程.
+- 非远程:跳过为叉添加一个 Git 远程.
 
--   Orgorg=<ORGANIZATION>在这个组织中拨存储库.
+- Orgorg=<ORGANIZATION>在这个组织中拨存储库.
 
 ## EXAMPLES
 
@@ -27,4 +26,4 @@ GIT
 
 ## SEE ALSO
 
-集线器克隆(1),集线器(1)
+hub 克隆(1),hub(1)

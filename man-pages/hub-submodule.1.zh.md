@@ -3,7 +3,7 @@
 
 ## SYNOPSIS
 
-"集线器子模块"添加[P][<options>] [<USER>/]<REPOSITORY>\<实验>
+"hub子模块"添加[P][<options>] [<USER>/]<REPOSITORY>\<实验>
 
 ## EXAMPLES
 
@@ -16,4 +16,4 @@ DOR/GH
 
 ## SEE ALSO
 
-集线器远程(1)、集线器(1)、GIT子模块(1)
+hub远程(1)、hub(1)、GIT子模块(1)

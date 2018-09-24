@@ -1,9 +1,8 @@
-
-Hub合并(1)将拉取请求与GITHUB合并按钮类似地合并在一起.= =
+Hub 合并(1)将拉取请求与 Github 合并按钮类似地合并在一起.= =
 
 ## SYNOPSIS
 
-"集线器合并"\< PulrReq URL >
+"hub 合并"\< PulrReq URL >
 
 这在当前分支中创建了本地合并提交,但实际上没有改变拉取请求的状态.但是,当新创建的合并提交被推送到远程存储库的默认分支时,拉请求将自动关闭并标记为"合并".
 
@@ -19,4 +18,4 @@ $ hub merge https://github.com/jingweno/gh/pull/73
 
 ## SEE ALSO
 
-集线器校验(1)、集线器(1)、Git合并(1)
+hub 校验(1)、hub(1)、Git 合并(1)

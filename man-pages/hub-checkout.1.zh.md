@@ -1,9 +1,9 @@
 
-集线器签出(1)-检查拉请求的头作为LO分支.= =
+hub签出(1)-检查拉请求的头作为LO分支.= =
 
 ## SYNOPSIS
 
-"集线器签出"\< PulrReq URL >[<BRANCH>]
+"hub签出"\< PulrReq URL >[<BRANCH>]
 
 ## EXAMPLES
 
@@ -15,4 +15,4 @@ $ hub checkout https://github.com/jingweno/gh/pull/73
 
 ## SEE ALSO
 
-集线器合并(1)、集线器AM(1)、集线器(1)、GIT校验(1)
+hub合并(1)、hubAM(1)、hub(1)、GIT校验(1)

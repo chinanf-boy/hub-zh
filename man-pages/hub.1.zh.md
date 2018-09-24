@@ -1,120 +1,123 @@
-
-# hub(1)	    ‐‐	    make      git      easier	  with	   GitHub
+# hub(1) ‐‐ 让 git 与 github 更容易合作
 
 ## SYNOPSIS
 
-"中心"[‐‐noop’’]  <COMMAND>  [<OPTIONS>]别名"枢纽"[‐s’’][<shell>]"帮助"hub‐集线器<COMMAND>
+- "hub" [`‐‐noop`] <COMMAND> [<OPTIONS>]
+- "hub alias" [`‐s`][<shell>]
+- "hub-help" ‐ <COMMAND>
 
 ## DESCRIPTION
 
-集线器是一个包装工具Git为了扩展它与额外的功能让它更好的工作需要在GitHub.
+hub 是一个 Git 包装工具 ,为了扩展与额外的功能,让它更好的在 GitHub 工作.
 
-## COMMANDS
+## 命令
 
-可分为两组:所有这些都是现成的,但目前在al‐Git是扩展通过集线器和集线器提供一个cus‐汤姆.
+可分为两组: al- 所有这些都是在 Git 现成的, hub 扩展了和 hub 提供的是 cus‐.
 
-### Extended git commands
+### 扩展的 git 命令
 
--   (1):replicate hub‐am提交请求采取从GitHub的拉.
+- [hub‐am(1)](hub‐am.1.zh.md):从 Github 的(pull request)提交请求复制 commit 到本地.
 
--   (1)A:hub‐apply下载补丁和应用从GitHub的局部信息.
+- [hub‐apply(1)](hub‐apply.1.zh.md): 从 GitHub 下载补丁和本地应用.
 
--   (1)hub‐checkout:退房的头拉请求作为一个地方分支.
+- [hub‐checkout(1)](hub‐checkout.1.zh.md): 签到-Checkout 提交请求的 head 作为一个本地分支.
 
--   (1)cherry‐pick hub‐cherry‐pick:A从叉在Github commit.
+- [hub‐cherry‐pick(1)](hub‐cherry‐pick.1.zh.md): 从 Github 的一个 Fork 选择一个 commit.
 
--   (1)hub‐clone:A从克隆库GitHub.
+- [hub‐clone(1)](hub‐clone.1.zh.md):从 GitHub 克隆-clone 库.
 
--   Hub取取(1):在执行Git获取之前添加丢失的远程文件.
+- [hub‐fetch(1)](hub‐fetch.1.zh.md):在执行 Git 获取之前,添加丢失的 remote.
 
--   Hub init(1):初始化Git存储库并向GITHUB添加远程指向.
+- [hub‐init(1)](hub‐init.1.zh.md):初始化 Git 存储库,并向 Github 添加远程 remote.
 
--   Hub合并(1):将GRAPH请求与GITHUB合并按钮类似的消息合并在本地.
+- [hub‐merge(1)](hub‐merge.1.zh.md):将 一个本地带信息的提交请求合并,就像在 Github 的 Merge 按钮.
 
--   集线器推送(1):将Git分支推到每个列出的遥控器上.
+- [hub‐push(1)](hub‐push.1.zh.md):将 Git 分支推到每个远程-remote 列表上.
 
--   集线器远程(1):为GITHUB存储库添加Git远程.
+- [hub‐remote(1)](hub‐remote.1.zh.md):为 Github 存储库添加 Git 远程-remote.
 
--   Hub子模块(1):为GITHUB存储库添加Git子模块.
+- [hub‐submodule(1)](hub‐submodule.1.zh.md):为 Github 存储库添加 Git 子模块.
 
-### New commands provided by hub
+### hub 提供的新命令
 
--   集线器别名(1):显示用于包装Git的shell指令.
+- [hub‐alias(1)](hub‐alias.1.zh.md):显示用于包装 Git 的 shell 指令.
 
--   Hub浏览(1):在Web浏览器中打开GITHUB存储库.
+- [hub‐browse(1)](hub‐browse.1.zh.md):在 Web 浏览器中打开 Github 存储库.
 
--   Hub的CI状态(1):显示提交的GITHUB状态信息.
+- [hub‐ci‐status(1)](hub‐ci‐status.1.zh.md):显示提交-commit的 Github 状态信息.
 
--   Hub比较(1):在Web浏览器中打开GITHUB比较页.
+- [hub‐compare(1)](hub‐compare.1.zh.md):在 Web 浏览器中打开 Github 比较页.
 
--   Hub创建(1):在GITHUB上创建一个新的存储库,并为其添加Git远程.
+- [hub‐create(1)](hub‐create.1.zh.md):在 Github 上创建一个新的存储库,并为其添加 Git 远程.
 
--   Hub删除(1):删除GITHUB上的存储库.
+- [hub‐delete(1)](hub‐delete.1.zh.md):删除 Github 上的存储库.
 
--   Hub叉(1):在GITHUB上叉当前项目并为其添加Git远程.
+- [hub‐fork(1)](hub‐fork.1.zh.md):在 Github 上Fork当前项目,并为其添加 Git 远程.
 
--   集线器拉请求(1):创建GITHUB拉请求.
+- [hub‐pull‐request(1)](hub‐pull‐request.1.zh.md):创建 Github 拉请求.
 
--   集线器PR(1):列表和签出GITHUB拉请求.
+- [hub‐pr(1)](hub‐pr.1.zh.md):列出和签到-checkout Github 提交请求.
 
--   集线器发行(1):列出和创建GITHUB问题.
+- [hub‐issue(1)](hub‐issue.1.zh.md):列出和创建 Github 问题.
 
--   Hub释放(1):列出并创建GITHUB版本.
+- [hub‐release(1)](hub‐release.1.zh.md):列出,并创建 Github 版本.
 
--   Hub同步(1):从上游获取并更新本地分支.
+- [hub‐sync(1)](hub‐sync.1.zh.md):从上游获取,并更新本地分支.
 
-## CONFIGURATION
+## 配置
 
-### GitHub OAuth authentication
+### GitHub OAuth 安全验证
 
-Hub在第一次需要访问API时将提示输入GitHub用户名和密码,并将其交换为OAuth令牌,并将其保存在"~/.config/."中.
+Hub 在第一次需要访问 API 时,将按照提示输入 GitHub 用户名和密码,并将其交换为 OAuth 令牌,并将其保存在`~/.config/hub`中.
 
-为了避免被提示,使用"GithUbHub"和"GithuBouSuffice"环境变量.
+为了避免被提示,使用"GITHUB_USER"和"GITHUB_PASSWORD"环境变量.
 
-或者,您可以提供"GithUbIGONTION",一个访问令牌.**回购协议**权限.这将不会写到"~/.CON-FIG/Hub".
+或者,您可以提供"GITHUB_TOKEN",一个访问令牌.**存储库**权限.这将不会写到"~/.con‐
+fig/hub".
 
-### HTTPS instead of git protocol
+### 用HTTPS 替换 git 协议
 
-如果您更喜欢用于git操作的HTTPS协议,那么您可以通过图形集线器来生成"https\:"而不是"git:"或"ssh:":
+如果您更喜欢 HTTPS 协议用于 git 操作,那么您可以通过配置 hub 来生成"https\:"-URLs,而不是"git:"或"ssh:":
 
 ```
 $ git config ‐‐global hub.protocol https
 ```
 
-这将影响"克隆"、"分支"、"远程添加"和其他扩展对GitHub回购URL的速记引用的集线器com命令.
+这将影响"clone"、"fork"、"remote add"和其他对 GitHub 库的 URL 引用的 hub 扩展命令.
 
-### GitHub Enterprise
+### GitHub Enterprise-企业
 
-默认情况下,集线器只与具有指向"Github.com"的重节点的存储库一起工作.GITHUB企业主机需要用白代码来配置集线器来处理与GithUbj.com相同的远程服务器:
+默认情况下,hub 只与具有指向"github.com"的存储库一起工作.Github 企业主机需要用白名单配置 hub ,处理与 github.com 相同的远程服务器:
 
 ```
 $ git config ‐‐global ‐‐add hub.host MY.GIT.ORG
 ```
 
-诸如"init"和"clone"等命令的默认主机仍然是"github.com",但这可能受到"GITHUB_HOST"en环境变量的影响:
+诸如"init"和"clone"等命令的默认主机仍然是"github.com",但这可受到"GITHUB_HOST"环境变量的影响:
 
 ```
 $ GITHUB_HOST=my.git.org git clone myproject
 ```
 
-### Environment variables
+### 环境变量
 
--   "HubuVBuSE":从集线器命令启用冗长的输出.
+- "HUB_VERBOSE": hub 命令启用verbose的输出.
 
--   "HUBJCONFIG":读取和存储HUB配置的文件路径.如果存在"XDG_CON.\_HOME",则默认值为"$XDG_CON"、".\_HOME/.";否则为"$HOME/.config/.".在XDG基础目录规范中,也在"XDGJCONTIONDILIRS"中搜索配置文件.
+- "HUB_CONFIG":读取和存储 hub 配置的文件路径.如果存在"XDG_CONFIG_HOME",则默认值为"$XDG_CONFIG_HOME/hub"; 否则为"$HOME/.config/hub".每个 XDG 基础目录规范,也可在"XDG_CONFIG_DIRS"中搜索配置文件.
 
--   "Hubl协议":使用一个"httpsssh"git作为git克隆/Press的首选协议.
+- "‘HUB_PROTOCOL‘":使用其中一个"https|ssh|git" 作为 git clone/push 的首选协议.
 
--   GithubGooto:用于GITHUB API请求的OAuth令牌.
+- ‘GITHUB_TOKEN‘:用于 Github API 请求的 OAuth 令牌.
 
 ## BUGS
 
-[HTTPS://GITHUBCOM/GITHUB/HUB/问题](https://github.com/github/hub/issues)
+[HTTPS://GithubCOM/github/Hub/问题](https://github.com/github/hub/issues)
 
-## AUTHORS
+## 作者
 
-[HTTPS://GITHUBCOM/GITHUB/HUB/贡献者](https://github.com/github/hub/contributors)
+[HTTPS://GithubCOM/Github/HUB/贡献者](https://github.com/github/hub/contributors)
 
 ## SEE ALSO
 
-Git(1),Git -克隆(1),Git -遥远(1),Git -init(1),[HTTPS://GITHUBCOM/GITHUB/HUB](https://github.com/github/hub)
+git(1),      git‐clone(1),	git‐remote(1),	     git‐init(1),
+https://github.com/github/hub

@@ -1,15 +1,14 @@
-
-集线器AM(1)复制从本地GITHUB拉请求提交.= =
+hubAM(1)复制从本地 Github 拉请求提交.= =
 
 ## SYNOPSIS
 
-"轮毂AM"[3]\< GITHUB-URL>
+"轮毂 AM"[3]\< Github-URL>
 
 ## OPTIONS
 
--   3:(推荐)见GIT-AM(1).
+- 3:(推荐)见 GIT-AM(1).
 
--   \< GITHUB-URL>:一个在GUTHUB上的拉请求或提交的URL.
+- \< Github-URL>:一个在 GUTHUB 上的拉请求或提交的 URL.
 
 ## EXAMPLES
 
@@ -18,7 +17,7 @@ $ hub am ‐3 https://github.com/jingweno/gh/pull/55
 >	curl   https://github.com/jingweno/gh/pull/55.patch    ‐o
 ```
 
-/TMP/55.P贴
+/TMP/55.P 贴
 
 ```
 > git am ‐3 /tmp/55.patch

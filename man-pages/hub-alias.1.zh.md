@@ -3,7 +3,7 @@ Hub -别名(1)显示了用于包装Git的shell指令.= =
 
 ## SYNOPSIS
 
-"集线器别名"[的S][<shell>]
+"hub别名"[的S][<shell>]
 
 ## OPTIONS
 
