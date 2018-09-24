@@ -27,6 +27,7 @@
 <!-- doc-templite END generated -->
 
 - [x] readme.md
+- [x] etc
 - [ ] man-pages
     - [ ] [./man-pages/hub.1.zh.md](./man-pages/hub.1.zh.md)
 
