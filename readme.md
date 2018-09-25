@@ -17,7 +17,7 @@
 
 ---
 
-## 校对 🀄️
+## 校对 ✅
 
 <!-- doc-templite START generated -->
 <!-- repo = 'github/hub' -->
