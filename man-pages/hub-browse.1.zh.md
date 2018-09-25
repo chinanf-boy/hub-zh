@@ -1,18 +1,18 @@
-Hub 浏览(1)在 Web 浏览器中打开 Github 存储库.= =
+# hub-browse(1) -- 在 Web 浏览器中打开 Github 存储库.
 
 ## 命令简介
 
-"hub 浏览"[UC][<user>/]<REPOSITORY>\[-][<SUBPAGE>]
+`hub browse` [-uc][<user>/]<REPOSITORY>|--] [<SUBPAGE>]
 
 ## 选项
 
-- u:打印 URL 而不是打开它.
+- -u:打印 URL ,而不是打开它.
 
-- C:把 URL 放在剪贴板中,而不是打开它.
+- -c:把 URL 放在剪贴板中,而不是打开它.
 
-- [<USER>/]<REPOSITORY>默认为当前工作目录中的存储库.
+- [<USER>/]<REPOSITORY> 默认为当前工作目录中的存储库.
 
-- <SUBPAGE>一个"wiki","提交","问题",或其他(默认:"树").
+- <SUBPAGE>"wiki","commits","issues"其中一个,或其他(默认:"tree").
 
 ## 例子
 
@@ -32,4 +32,4 @@ $ hub browse gh wiki
 
 ## 更多
 
-hub 比较(1),hub(1)
+[hub-compare(1)](hub-compare.1.zh.md), [hub(1)](hub.1.zh.md)

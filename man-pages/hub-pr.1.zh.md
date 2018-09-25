@@ -1,91 +1,89 @@
-# hub-pr(1) -- Manage GitHub pull requests for the current project.
+# hub-pr(1) -- 列出和签到-checkout Github 提交请求.
 
 ## 命令简介
 
-"轮毂 PR"列表[的 S<STATE>][-h <head>] [乙<BASE>]o \< SotTyKIK>[^ ]] [f<FORMAT>][-l <limit>]"轮毂 PR"签出\< PR 号码>[<BRANCH>]
+`hub pr` list [-s <STATE>][-h <head>] [-b <BASE>]-o <SORT_KEY>
+[-^]] [-f <FORMAT>][-l <limit>] `hub pr` checkout <PR-NUMBER>
+[<BRANCH>]
 
 ## 命令
 
-- *列表*列出当前项目中的拉取请求.
+- _列表_:列出当前项目中的提交请求.
 
-- *结帐*在一个新的分支中检查拉取请求的头部.
+- _结帐_:在一个新的分支中检查提交请求的头部.
 
 ## 选项
 
-- s,s 态<STATE>过滤器拉动请求<STATE>(默认:"打开").
+- -s, --state <STATE>:
+  用<STATE>过滤提交请求(默认:"打开").
 
-- H,头[<OWNER>:]<BRANCH>显示从指定的头部开始的拉取请求<BRANCH>. 默认值为<OWNER>从当前存储库中获取.
+- -h, --head [<OWNER>:]<BRANCH>:
+  显示指定的首个<BRANCH>开始的提交请求. 默认值为<OWNER>从当前存储库中获取.
 
-- b,基<BRANCH>显示基于指定的拉取请求<BRANCH>.
+- -b, --base <BRANCH>:
+  显示提交请求,基于指定的<BRANCH>.
 
-- f,格式<FORMAT>使用格式打印拉请求列表<FORMAT>(默认值:%SC%>(8)%i %cReal%t%%%n).请参阅 git 日志手册的"PRETTY FORMATS"部分,了解有关占位符如何以格式使用的更多细节.可用占位符是:
+- -f, --format <FORMAT>:
+  格式打印提交请求列表,通过使用<FORMAT>(默认值:"%sC%>(8)%i%Creset %t% l%n").请参阅 git 日志手册的"PRETTY FORMATS"部分,了解有关占位符如何以格式使用的更多细节.可用占位符是:
 
-  ```
-  %I: pull request number
+```
+%I: pull request 数量
 
-  %i: pull request number prefixed with "#"
+%i: pull request 数量, 前缀是"#"
 
-  %U: the URL of this pull request
+%U: pull request的URL
 
-  %S: state (i.e. "open", "closed")
+%S: 状态 (例如. "open", "closed")
 
-  %sC: set color to red or green,  depending	on  pull  request
-  ```
+%sC: 设置颜色 red 或 green,  取决于pull  request状态.
 
-  状态.
+%t: 标题
 
-  ```
-  %t: title
+%l: 颜色标签
 
-  %l: colored labels
+%L: 原生, 逗号分隔标签
 
-  %L: raw, comma-separated labels
+%b: 主体
 
-  %b: body
+%B: 基础 branch
 
-  %B: base branch
+%H: head branch
 
-  %H: head branch
+%au: 作者登录名
 
-  %au: login name of author
+%as: 分配的逗号分隔列表
 
-  %as: comma-separated list of assignees
+%Mn: 里程碑 数量
 
-  %Mn: milestone number
+%Mt: 里程碑 标题
 
-  %Mt: milestone title
+%NC: 评论数量
 
-  %NC: number of comments
+%Nc:  评论数量, 包裹进圆括号, 或 若零则是空字符串
 
-  %Nc:  number  of  comments	wrapped  in parentheses, or blank
-  ```
+%cD: 创建了的 仅数据 (没有一天的时间)
 
-  字符串为零.
+%cr: 创建了的 数据, 相对
 
-  ```
-  %cD: created date-only (no time of day)
+%ct: 创建了的 数据, UNIX 时间戳
 
-  %cr: created date, relative
+%cI: 创建了的 数据, ISO 8601 格式
 
-  %ct: created date, UNIX timestamp
+%uD: 更新了的 仅数据 (没有一天的时间)
 
-  %cI: created date, ISO 8601 format
+%ur: 更新了的 数据, 相对
 
-  %uD: updated date-only (no time of day)
+%ut: 更新了的 数据, UNIX 时间戳
 
-  %ur: updated date, relative
+%uI: 更新了的 数据, ISO 8601 格式
+```
 
-  %ut: updated date, UNIX timestamp
+- -o, --sort <SORT_KEY>:按"created"(默认)、"updated"、"popularity"或"long-running"排序显示 issues.
 
-  %uI: updated date, ISO 8601 format
-  ```
+- -^ --sort-ascending::按升序排序,而不是降序排序.
 
-- o,排序> \< SoTyKEKE>:按"创建"(默认)、"更新"、"流行"或"长时间运行"排序显示问题.
-
-- 升排序:按升序排序而不是降序排序.
-
-- l、极限<LIMIT>只显示第一个<LIMIT>问题.
+- -L, --limit <LIMIT>:只显示第一个<LIMIT>问题.
 
 ## 更多
 
-轮毂问题(1),轮毂牵引请求(1),轮毂(1)
+[hub-issue(1)](hub-issue.1.zh.md), [hub-pull-request(1)](hub-pull-request.1.zh.md), [hub(1)](hub.1.zh.md)

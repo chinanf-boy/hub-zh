@@ -1,8 +1,8 @@
-hub‐apply(1) -- 从 GitHub 下载补丁和本地应用.
+# hub-apply(1) -- 从 GitHub 下载补丁和本地应用.
 
 ## 命令简介
 
-‘hub apply‘ <GITHUB‐URL>
+`hub apply` <GITHUB-URL>
 
 ## 选项
 
@@ -12,11 +12,11 @@ hub‐apply(1) -- 从 GitHub 下载补丁和本地应用.
 
 ```
 $ hub apply https://github.com/jingweno/gh/pull/55
->	curl   https://github.com/jingweno/gh/pull/55.patch    ‐o
+>	curl   https://github.com/jingweno/gh/pull/55.patch    -o
 /tmp/55.patch
 > git apply /tmp/55.patch
 ```
 
 ## 更多
 
-[hub‐am(1)](hub‐am.1.zh.md), [hub(1)](hub.1.zh.md), git‐apply(1)
+[hub-am(1)](hub-am.1.zh.md), [hub(1)](hub.1.zh.md), git-apply(1)

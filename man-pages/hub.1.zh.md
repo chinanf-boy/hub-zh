@@ -4,7 +4,7 @@
 
 - "hub" [`-noop`] <COMMAND> [<OPTIONS>]
 - "hub alias" [`-s`][<shell>]
-- "hub-help" - <COMMAND>
+- [hub-help](hub-help.1.zh.md) - <COMMAND>
 
 ## DESCRIPTION
 
@@ -26,7 +26,7 @@ hub 是一个 Git 包装工具 ,为了扩展与额外的功能,让它更好的�
 
 - [hub-clone(1)](./hub-clone.1.zh.md):从 GitHub 克隆-clone 库.
 
-- [hub-fetch(1)](./hub-fetch.1.zh.md):在执行 Git 获取之前,添加丢失的 remote.
+- [hub-fetch(1)](./hub-fetch.1.zh.md):在执行 Git 获取之前,添加错过的 remote.
 
 - [hub-init(1)](./hub-init.1.zh.md):初始化 Git 存储库,并向 Github 添加远程 remote.
 
@@ -54,7 +54,7 @@ hub 是一个 Git 包装工具 ,为了扩展与额外的功能,让它更好的�
 
 - [hub-fork(1)](./hub-fork.1.zh.md):在 Github 上 Fork 当前项目,并为其添加 Git 远程.
 
-- [hub-pull-request(1)](./hub-pull-request.1.zh.md):创建 Github 拉请求.
+- [hub-pull-request(1)](./hub-pull-request.1.zh.md):创建 Github 提交请求.
 
 - [hub-pr(1)](./hub-pr.1.zh.md):列出和签到-checkout Github 提交请求.
 
@@ -105,9 +105,9 @@ $ GITHUB_HOST=my.git.org git clone myproject
 
 - "HUB_CONFIG":读取和存储 hub 配置的文件路径.如果存在"XDG_CONFIG_HOME",则默认值为"$XDG_CONFIG_HOME/hub"; 否则为"$HOME/.config/hub".每个 XDG 基础目录规范,也可在"XDG_CONFIG_DIRS"中搜索配置文件.
 
-- "‘HUB_PROTOCOL‘":使用其中一个"https|ssh|git" 作为 git clone/push 的首选协议.
+- "`HUB_PROTOCOL`":使用其中一个"https|ssh|git" 作为 git clone/push 的首选协议.
 
-- ‘GITHUB_TOKEN‘:用于 Github API 请求的 OAuth 令牌.
+- `GITHUB_TOKEN`:用于 Github API 请求的 OAuth 令牌.
 
 ## BUGS
 

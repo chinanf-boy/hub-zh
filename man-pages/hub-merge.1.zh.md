@@ -1,10 +1,10 @@
-Hub 合并(1)将拉取请求与 Github 合并按钮类似地合并在一起.= =
+# hub-merge(1) -- 将 一个本地带信息的提交请求合并,就像在 Github 的 Merge 按钮.
 
 ## 命令简介
 
-"hub 合并"\< PulrReq URL >
+`hub merge` <PULLREQ-URL>
 
-这在当前分支中创建了本地合并提交,但实际上没有改变拉取请求的状态.但是,当新创建的合并提交被推送到远程存储库的默认分支时,拉请求将自动关闭并标记为"合并".
+这在当前分支中创建了本地合并提交,但实际上没有改变提交请求的状态.但是,当新创建的合并提交被推送到远程存储库的默认分支时,提交请求将自动关闭并标记为"合并".
 
 ## 例子
 
@@ -18,4 +18,4 @@ $ hub merge https://github.com/jingweno/gh/pull/73
 
 ## 更多
 
-hub 校验(1)、hub(1)、Git 合并(1)
+[hub-checkout(1)](hub-checkout.1.zh.md), [hub(1)](hub.1.zh.md), git-merge(1)

@@ -1,10 +1,8 @@
-hub 获取(1)在执行 Git 之前添加丢失的远程文件
-
-# fetch.
+# hub-fetch(1) -- 在执行 Git 获取之前,添加错过的 remote
 
 ## 命令简介
 
-"hub 读取"<USER>[,<USER2>...…]
+`hub fetch` <USER>[,<USER2>...]
 
 ## 例子
 
@@ -18,4 +16,4 @@ $ hub fetch --multiple jingweno mislav
 
 ## 更多
 
-hub-远程(1),hub(1),Git -FETCH(1)
+[hub-remote(1)](hub-remote.1.zh.md), [hub(1)](hub.1.zh.md), git-fetch(1)

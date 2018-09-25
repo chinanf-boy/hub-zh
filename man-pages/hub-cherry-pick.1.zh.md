@@ -1,9 +1,10 @@
-# hub-cherry-pick(1) -- Cherry-pick a commit from a fork on GitHub.
+# hub-cherry-pick(1) -- 从 Github 的一个 Fork 选择一个 commit
 
 ## 命令简介
 
-"轮毂樱桃采摘"\<承诺 URL >轮毂樱桃采摘<USER>@<SHA>
+- `hub cherry-pick` <COMMIT-URL>
+- `hub cherry-pick` <USER>@<SHA>
 
 ## 更多
 
-轮毂 AM(1)、轮毂(1)、GIT 樱花拾取(1)
+[hub-am(1)](hub-am.1.zh.md), [hub(1)](hub.1.zh.md), git-cherry-pick(1)

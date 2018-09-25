@@ -1,8 +1,8 @@
-hub-am(1) -- 从 Github 的(pull request)提交请求复制 commit 到本地.
+# hub-am(1) -- 从 Github 的(pull request)提交请求复制 commit 到本地.
 
 ## 命令简介
 
-‘hub am‘ [-3] <GITHUB-URL>
+`hub am` [-3] <GITHUB-URL>
 
 ## 选项
 

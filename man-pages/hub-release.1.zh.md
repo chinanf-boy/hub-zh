@@ -1,103 +1,121 @@
-Hub 释放(1)管理 Github 版本.= =
+# hub-release(1) -- 列出,并创建 Github 版本.
 
 ## 命令简介
 
-"毂释放"[包括草案][--exclude-prereleases] [l<LIMIT>]"毂释放"秀<TAG>"毂释放"创建[DPOC][-a <file>] [米<MESSAGE>f<FILE>][-t <target>] <TAG>"轮毂重租"编辑[<options>] <TAG>"中枢释放"下载<TAG>"中枢释放"删除<TAG>
+`hub release` [--include-drafts][--exclude-prereleases] [-L
+<LIMIT>] `hub release` show <TAG> `hub release` create [-dpoc][-a <file>] [-m <MESSAGE>|-F <FILE>][-t <target>] <TAG> `hub re- lease` edit [<options>] <TAG> `hub release` download <TAG> `hub release` delete <TAG>
 
 ## 命令
 
 在没有参数的情况下,显示现有版本的列表.
 
-有"包括草案",包括草案在上市.使用"排除排除",从列表中排除非稳定版本.
+有"--include-drafts",会包括草案版本.使用"--exclude-prereleases",从列表中排除非稳定版本.
 
-- *显示*显示 Github 发行说明<TAG>.
+- _显示_:用<TAG>显示 Github 发行说明.
 
-  使用"显示下载",包括"下载"部分.
+使用"--show-downloads",包括"下载"部分.
 
-- *创造*创建指定的 Github 版本<TAG>姓名.如果 Git 标签<TAG>不存在,它将在<TARGET>(默认:租金分支).
+- _创建_:用指定的<TAG>名创建 Github 版本.如果 Git 标签<TAG>不存在,它将在<TARGET>创建(默认:当前分支).
 
-- *编辑*编辑指定的 Github 版本<TAG>姓名.接受相同的选项*创造*命令.用"草稿=虚报"发布草稿.
+- _编辑_:用指定的<TAG>名编辑 Github 版本.接受*创建*命令相同的选项.用"--draft=false"发布草稿.
 
-  ```
-  When  <MESSAGE>  or  <FILE>  are not specified, a text editor
-  ```
+当 <MESSAGE> 或 <FILE> 没有指定, 编辑器将开放前填充当前发行的标题和身体.重新使用现有的标题和身体不变,通过"m".
 
-  将开放前填充当前发行的标题和身体.重新使用现有的标题和身体不变,通过"m".
+- _下载_:下载指定版本<TAG>的附加资产
 
-- *下载*下载指定版本的附加资产<TAG>.
-
-- *删除*删除指定的发行版和相关资产<TAG>.
+- _删除_:删除指定<TAG>的发行版和相关资产.
 
 ## 选项
 
-- l,限制:只显示第一个<LIMIT>释放.
+- -L, --limit:
+  只显示第一个<LIMIT>版本.
 
-- D,草案:创建一个草案释放.
+- -d, --draft:
+  创建一个草案发布.
 
-- P,预存:创建预发布.
+- -p, --prerelease:
+  创建预发布.
 
-- A,附加<FILE>在这个版本中附加一个文件作为一个资产.
+- -a, --attach <FILE>:
+  在这个版本中附加一个文件作为一个资产.
 
-  ```
-  If	<FILE> is in the "<filename>#<text>" format, the text af-
-  ```
+若 <FILE> 在 "<filename>#<text>" 格式, 这 text 会作为资产标签.
 
-  将"γ"字符作为资产标签.
+- -m, --message <MESSAGE>:
+  使用第一行<MESSAGE>作为发布标题,其余的作为发布说明.
 
-- M,消息<MESSAGE>使用第一行<MESSAGE>作为发布标题,其余的作为发布说明.
+- -F, --file <FILE>:
+  请阅读发布的标题和描述<FILE>.
 
-- f,文件<FILE>请阅读发布的标题和描述<FILE>.
+- -e, --edit:
+  进一步编辑内容<FILE>在提交之前的文本编辑器中.
 
-- e,编辑:进一步编辑内容<FILE>在提交之前的文本编辑器中.
+- -o, --browse:
+  在 Web 浏览器中打开新版本.
 
-- o,浏览:在 Web 浏览器中打开新版本.
+- -c, --copy:
+  把新版本的 URL 放在剪贴板上,而不是打印它.
 
-- c,拷贝:把新版本的 URL 放在剪贴板上,而不是打印它.
+- -t, --commitish <TARGET>:
+  一个提交 SHAN 或分支名称来附加释放,仅用于<TAG>还不存在(默认:主分支).
 
-- 公平交易<TARGET>一个提交 SHAN 或分支名称来附加释放,仅用于<TAG>还不存在(默认:主分支).
+- -f, --format <FORMAT>:
+  格式打印提交请求列表,通过使用<FORMAT>(默认值:"%sC%>(8)%i%Creset %t% l%n").请参阅 git 日志手册的"PRETTY FORMATS"部分,了解有关占位符如何以格式使用的更多细节.可用占位符是:
 
-- f,格式<FORMAT>使用漂亮的打印版本<FORMAT>(默认值:%t%n).请参阅 Git -log(1)的"漂亮格式"部分,了解占位符如何在格式中使用的其他细节.问题的可用占位符是:
+```
+%I: pull request 数量
 
-  ```
-  %U: the URL of this release
+%i: pull request 数量, 前缀是"#"
 
-  %uT: tarball URL
+%U: pull request的URL
 
-  %uZ: zipball URL
+%S: 状态 (例如. "open", "closed")
 
-  %uA: asset upload URL
+%sC: 设置颜色 red 或 green,  取决于pull  request状态.
 
-  %S: state (i.e. "draft", "pre-release")
+%t: 标题
 
-  %sC: set color to yellow or red, depending on state
+%l: 颜色标签
 
-  %t: release name
+%L: 原生, 逗号分隔标签
 
-  %T: release tag
+%b: 主体
 
-  %b: body
+%B: 基础 branch
 
-  %as: the list of assets attached to this release
+%H: head branch
 
-  %cD: created date-only (no time of day)
+%au: 作者登录名
 
-  %cr: created date, relative
+%as: 分配的逗号分隔列表
 
-  %ct: created date, UNIX timestamp
+%Mn: 里程碑 数量
 
-  %cI: created date, ISO 8601 format
+%Mt: 里程碑 标题
 
-  %pD: published date-only (no time of day)
+%NC: 评论数量
 
-  %pr: published date, relative
+%Nc:  评论数量, 包裹进圆括号, 或 若零则是空字符串
 
-  %pt: published date, UNIX timestamp
+%cD: 创建了的 仅数据 (没有一天的时间)
 
-  %pI: published date, ISO 8601 format
-  ```
+%cr: 创建了的 数据, 相对
 
-- <TAG>这个版本的 Git 标签名.
+%ct: 创建了的 数据, UNIX 时间戳
+
+%cI: 创建了的 数据, ISO 8601 格式
+
+%uD: 更新了的 仅数据 (没有一天的时间)
+
+%ur: 更新了的 数据, 相对
+
+%ut: 更新了的 数据, UNIX 时间戳
+
+%uI: 更新了的 数据, ISO 8601 格式
+```
+
+- <TAG>: 这个版本的 Git 标签名.
 
 ## 更多
 
-hub(1),GIT-TAG 标签(1)
+[hub(1)](hub.1.zh.md), git-tag(1)

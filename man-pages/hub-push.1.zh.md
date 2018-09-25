@@ -1,8 +1,8 @@
-# hub-push(1) -- Push a git branch to each of the listed remotes.
+# hub-push(1) -- 将 Git 分支推到每个远程-remote 列表上.
 
 ## 命令简介
 
-hub 推送<REMOTE>[,<REMOTE2>…][<ref>]
+`hub push` <REMOTE>[,<REMOTE2>...][<ref>]
 
 ## 例子
 
@@ -18,4 +18,4 @@ $ hub push origin
 
 ## 更多
 
-hub(1),Git -Press(1)
+[hub(1)](hub.1.zh.md), git-push(1)

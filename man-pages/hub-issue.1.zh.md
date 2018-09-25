@@ -1,122 +1,128 @@
-# hub-issue(1) -- Manage GitHub issues for the current project.
+# hub-issue(1) -- 列出和创建 Github 问题.
 
 ## 命令简介
 
-"枢纽问题"[A<ASSIGNEE>][-c <creator>] ["@"<USER>][-s <state>] [f<FORMAT>][-m <milestone>] [l<LABELS>][-d <date>]
-[o \< SORTTKEY > > \[^ ^ \]][-l <limit>]"hub 发行"[英国石油公司][-m <message>|-f <file>] [编辑][-a <users>] [米<MILESTONE>][-l <labels>]"hub 发行"标签[彩色]
+`hub issue` [-a <ASSIGNEE>][-c <creator>] [-@ <USER>][-s <state>] [-f <FORMAT>][-m <milestone>] [-l <LABELS>][-d <date>]
+[-o <SORT_KEY> [-^]][-l <limit>] `hub issue` create [-oc][-m <message>|-f <file>] [--edit][-a <users>] [-M <MILESTONE>][-l <labels>] `hub issue` labels [--color]
 
 ## 命令
 
 没有参数,显示一个公开问题的列表.
 
-- *创造*打开当前项目中的一个问题.
+- _创造_:打开当前项目中的一个问题.
 
-- *标签*列出这个存储库中可用的标签.
+- _标签_:列出这个存储库中可用的标签.
 
 ## 选项
 
-- A、受让人<ASSIGNEE>只显示分配给的问题<ASSIGNEE>.
+- -a, --assignee <ASSIGNEE>:
+  只显示<ASSIGNEE>的问题.
 
-  ```
-  When opening an issue, this can be a comma-separated list  of
-  ```
+打开问题时，这可以是以逗号分隔的人们分配给新的问题列表.
 
-  人们分配给新的问题.
+- -c, --creator <CREATOR>:
+  只显示<CREATOR>的问题
 
-- C,创造者<CREATOR>只显示由问题创建的问题<CREATOR>.
+- -@, --mentioned <USER>:
+  只显示<USER>问题.
 
-- "@"、"提到"<USER>只显示问题<USER>.
+- -s, --state <STATE>:
+  显示状态问题<STATE>(默认:"打开").
 
-- s,s 态<STATE>显示状态问题<STATE>(默认:"打开").
+- -f, --format <FORMAT>:
+  格式打印提交请求列表,通过使用<FORMAT>(默认值:"%sC%>(8)%i%Creset %t% l%n").请参阅 git 日志手册的"PRETTY FORMATS"部分,了解有关占位符如何以格式使用的更多细节.可用占位符是:
 
-- f,格式<FORMAT>使用格式打印问题的内容<FORMAT>(默认值:%SC%>(8)%i %cReal%t%%%n).请参阅 git 日志手册的"PRETTY FORMATS"部分,了解有关占位符如何以格式使用的更多细节.问题的可用占位符是:
+```
+%I: pull request 数量
 
-  ```
-  %I: issue number
+%i: pull request 数量, 前缀是"#"
 
-  %i: issue number prefixed with "#"
+%U: pull request的URL
 
-  %U: the URL of this issue
+%S: 状态 (例如. "open", "closed")
 
-  %S: state (i.e. "open", "closed")
+%sC: 设置颜色 red 或 green,  取决于pull  request状态.
 
-  %sC: set color to red or green, depending on issue state.
+%t: 标题
 
-  %t: title
+%l: 颜色标签
 
-  %l: colored labels
+%L: 原生, 逗号分隔标签
 
-  %L: raw, comma-separated labels
+%b: 主体
 
-  %b: body
+%B: 基础 branch
 
-  %au: login name of author
+%H: head branch
 
-  %as: comma-separated list of assignees
+%au: 作者登录名
 
-  %Mn: milestone number
+%as: 分配的逗号分隔列表
 
-  %Mt: milestone title
+%Mn: 里程碑 数量
 
-  %NC: number of comments
+%Mt: 里程碑 标题
 
-  %Nc: number of comments  wrapped  in  parentheses,	or  blank
-  ```
+%NC: 评论数量
 
-  字符串为零.
+%Nc:  评论数量, 包裹进圆括号, 或 若零则是空字符串
 
-  ```
-  %cD: created date-only (no time of day)
+%cD: 创建了的 仅数据 (没有一天的时间)
 
-  %cr: created date, relative
+%cr: 创建了的 数据, 相对
 
-  %ct: created date, UNIX timestamp
+%ct: 创建了的 数据, UNIX 时间戳
 
-  %cI: created date, ISO 8601 format
+%cI: 创建了的 数据, ISO 8601 格式
 
-  %uD: updated date-only (no time of day)
+%uD: 更新了的 仅数据 (没有一天的时间)
 
-  %ur: updated date, relative
+%ur: 更新了的 数据, 相对
 
-  %ut: updated date, UNIX timestamp
+%ut: 更新了的 数据, UNIX 时间戳
 
-  %uI: updated date, ISO 8601 format
-  ```
+%uI: 更新了的 数据, ISO 8601 格式
+```
 
-- M,消息<MESSAGE>使用第一行<MESSAGE>作为标题,其余的作为问题描述.
+- -m, --message <MESSAGE>:
+  使用第一行<MESSAGE>作为标题,其余的作为问题描述.
 
-- f,文件<FILE>阅读问题标题和描述<FILE>.
+- -F, --file <FILE>:
+  阅读问题标题和描述<FILE>.
 
-- e,编辑:进一步编辑内容<FILE>在提交之前的文本编辑器中.
+- -e, --edit:
+  在提交之前的文本编辑器中,进一步编辑内容<FILE>.
 
-- o,浏览:在 Web 浏览器中打开新的问题.
+- -o, --browse:
+  在 Web 浏览器中打开新的问题.
 
-- c,拷贝:把新问题的 URL 放在剪贴板上,而不是打印它.
+- -c, --copy:
+  把新问题的 URL 放在剪贴板上,而不是打印它.
 
-- m,里程碑<ID>只显示带有 GID 的 Github 里程碑的问题<ID>.
+- -M, --milestone <ID>:
+  只显示带有 GID 的 Github 里程碑的问题<ID>.
 
-  ```
-  When opening an issue, add this issue to a	GitHub	milestone
-  ```
+当打开 issue, 为 issue 添加 GitHub 里程碑<ID>.
 
-  带身份证<ID>.
+- -l, --labels <LABELS>:
+  只显示带有某些标签的问题.
 
-- L,标签<LABELS>只显示带有某些标签的问题.
+当打开 issue, 添加对此标签问题的逗号列表.
 
-  ```
-  When  opening  an issue, add a comma-separated list of labels
-  ```
+- -d, --since <DATE>:
+  只显示更新后或更新后的问题<DATE>采用 ISO 8601 格式.
 
-  对此问题.
+- -o, --sort <SORT_KEY>:
+  按"created"(默认)、"updated"或"comments"排序问题.
 
-- d,此后<DATE>只显示更新后或更新后的问题<DATE>采用 ISO 8601 格式.
+- -^ --sort-ascending:
+  按升序排序,而不是降序排序.
 
-- o,排序> \< SoTyKEKE>:按"创建"(默认)、"更新"或"注释"排序问题.
+- -L, --limit <LIMIT>:
+  只显示第一个<LIMIT>问题.
 
-- 升排序:按升序排序而不是降序排序.
+- --include-pulls:
+  包括提交请求以及问题.
 
-- l、极限<LIMIT>只显示第一个<LIMIT>问题.
-
-- 包括牵线:包括拉请求以及问题.
-
-- 颜色:为标签列表启用彩色输出.
+- --color:
+  为标签列表启用彩色输出.
