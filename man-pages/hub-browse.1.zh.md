@@ -2,17 +2,17 @@
 
 ## 命令简介
 
-`hub browse` [-uc][<user>/]<REPOSITORY>|--] [<SUBPAGE>]
+**hub browse** `[-uc][<USER>/]<REPOSITORY>|--] [<SUBPAGE>]`
 
 ## 选项
 
-- -u:打印 URL ,而不是打开它.
+- `-u`: 打印 URL ,而不是打开它.
 
-- -c:把 URL 放在剪贴板中,而不是打开它.
+- `-c`: 把 URL 放在剪贴板中,而不是打开它.
 
-- [<USER>/]<REPOSITORY> 默认为当前工作目录中的存储库.
+- `[<USER>/]<REPOSITORY>`:默认为当前工作目录中的存储库.
 
-- <SUBPAGE>"wiki","commits","issues"其中一个,或其他(默认:"tree").
+- `<SUBPAGE>`:"wiki","commits","issues"其中一个,或其他(默认:"tree").
 
 ## 例子
 

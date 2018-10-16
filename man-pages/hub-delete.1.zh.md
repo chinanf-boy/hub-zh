@@ -2,13 +2,13 @@
 
 ## 命令简介
 
-`hub delete` [-y][<organization>/]<NAME>
+**hub delete** `[-y][<organization>/]<NAME>`
 
 ## 选项
 
-- -y, --yes:跳过确认提示，并立即删除存储库.
+- `-y, --yes`:跳过确认提示，并立即删除存储库.
 
-- [<ORGANIZATION>/]<NAME>: Github 上存储库的名称.
+- `[<ORGANIZATION>/]<NAME>`: Github 上存储库的名称.
 
 ## 例子
 

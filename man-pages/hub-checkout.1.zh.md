@@ -2,7 +2,7 @@
 
 ## 命令简介
 
-`hub checkout` <PULLREQ-URL> [<BRANCH>]
+**hub checkout** `<PULLREQ-URL> [<BRANCH>]`
 
 ## 例子
 

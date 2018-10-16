@@ -2,13 +2,13 @@
 
 ## 命令简介
 
-`hub am` [-3] <GITHUB-URL>
+**hub am** `[-3] <GITHUB-URL>`
 
 ## 选项
 
-- -3:(推荐)见 git-am(1).
+- `-3`: (推荐)见 git-am(1).
 
-- \<Github-URL>:一个在 GUTHUB 上的提交请求-pull-request 或 commit 的 URL.
+- `<GITHUB-URL>`:一个在 GUTHUB 上的提交请求-pull-request 或 commit 的 URL.
 
 ## 例子
 

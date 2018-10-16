@@ -2,14 +2,14 @@
 
 ## 命令简介
 
-`hub fork` [--no-remote][--remote-name=<remote>] [--org=<ORGANI-
-ZATION>]
+**hub fork** `[--no-remote][--remote-name=<remote>] [--org=<ORGANI-
+ZATION>]`
 
 ## 选项
 
-- --no-remote: Fork 后跳过添加一个 Git 远程.
+- `--no-remote`: Fork 后跳过添加一个 Git 远程.
 
-- --org=<ORGANIZATION>: 在这个组织中 Fork 存储库.
+- `--org=<ORGANIZATION>`: 在这个组织中 Fork 存储库.
 
 ## 例子
 

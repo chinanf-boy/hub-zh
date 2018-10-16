@@ -2,7 +2,7 @@
 
 ## 命令简介
 
-`hub push` <REMOTE>[,<REMOTE2>...][<ref>]
+**hub push** `<REMOTE>[,<REMOTE2>...][<ref>]`
 
 ## 例子
 

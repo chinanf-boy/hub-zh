@@ -2,15 +2,17 @@
 
 ## 命令简介
 
-‘hub help‘ hub ‘hub help‘ <COMMAND> ‘hub help‘ hub-<COMMAND>
-[--plain-text]
+- **hub help** `hub `
+- **hub help** `<COMMAND> `
+- **hub help** `hub-<COMMAND>
+ [--plain-text]`
 
 ## 选项
 
-- hub-<COMMAND>:
+- `hub-<COMMAND>`:
   使用此格式查看对存在的 Git 命令的 hub 扩展的帮助.
 
-- --plain-text:
+- `--plain-text`:
   跳过 man 页查找机制并,显示普通帮助文本.
 
 ## MAN 查看机制

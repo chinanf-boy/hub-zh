@@ -2,7 +2,7 @@
 
 ## 命令简介
 
-`hub fetch` <USER>[,<USER2>...]
+**hub fetch** `<USER>[,<USER2>...]`
 
 ## 例子
 

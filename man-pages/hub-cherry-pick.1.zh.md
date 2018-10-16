@@ -2,8 +2,8 @@
 
 ## 命令简介
 
-- `hub cherry-pick` <COMMIT-URL>
-- `hub cherry-pick` <USER>@<SHA>
+- **hub cherry-pick** `<COMMIT-URL>`
+- **hub cherry-pick** `<USER>@<SHA>`
 
 ## 更多
 

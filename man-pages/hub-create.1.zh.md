@@ -2,22 +2,22 @@
 
 ## 命令简介
 
-`hub create` [-poc][-d <description>] [-h <HOMEPAGE>][<ORGANI-
-ZATION>/]<NAME>]
+**hub create** `[-poc][-d <description>] [-h <HOMEPAGE>][<ORGANI-
+ZATION>/]<NAME>]`
 
 ## 选项
 
-- -p :创建一个私有存储库.
+- `-p `:创建一个私有存储库.
 
-- -d <DESCRIPTION>: 使用此文本作为 Github 存储库的说明.
+- `-d <DESCRIPTION>`: 使用此文本作为 Github 存储库的说明.
 
-- -h <HOMEPAGE>: 使用此文本作为 Github 存储库的 URL.
+- `-h <HOMEPAGE>`: 使用此文本作为 Github 存储库的 URL.
 
-- -o, --browse:在 Web 浏览器中打开新的存储库.
+- `-o, --browse`:在 Web 浏览器中打开新的存储库.
 
-- -c ,拷贝:将新存储库的 URL 放在剪贴板上,而不是打印它.
+- `-c ,--copy`:将新存储库的 URL 放在剪贴板上,而不是打印它.
 
-- [<ORGANIZATION>/]<NAME>: Github 上的存储库的名称(默认值:当前工作目录的名称).
+- `[<ORGANIZATION>/]<NAME>`: Github 上的存储库的名称(默认值:当前工作目录的名称).
 
 ```
 很显然, 在<ORGANIZATION>下创建存储库.

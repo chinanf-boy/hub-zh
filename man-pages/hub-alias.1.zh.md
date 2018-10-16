@@ -2,13 +2,13 @@
 
 ## 命令简介
 
-`hub alias` [-s][<shell>]
+**hub alias** `[-s][<shell>]`
 
 ## 选项
 
-- -s:适用于"eval"的输出外壳脚本.
+- `-s`: 适用于"eval"的输出外壳脚本.
 
-- <SHELL>指定 shell 的类型(默认值为"$shell"环境变量).
+- `<SHELL>`: 指定 shell 的类型(默认值为"$shell"环境变量).
 
 ## 更多
 

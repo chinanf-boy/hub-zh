@@ -2,16 +2,16 @@
 
 ## 命令简介
 
-`hub clone` [-p][<options>] [<USER>/]<REPOSITORY> [<DESTINA-
-TION>]
+**hub clone** `[-p][<options>] [<USER>/]<REPOSITORY> [<DESTINA-
+TION>]`
 
 ## 选项
 
-- -p:(已弃用)克隆 SSH 的私人储存库.
+- `-p`:(已弃用)克隆 SSH 的私人储存库.
 
-- [<USER>/]<REPOSITORY>: <USER>默认为您自己的 Github 用户名.
+- `[<USER>/]<REPOSITORY>`: `<USER>`默认为您自己的 Github 用户名.
 
-- <DESTINATION> 要克隆的目录名(默认:<REPOSITORY>)
+- `<DESTINATION>`: 要克隆的目录名(默认:<REPOSITORY>)
 
 ## 复制时的协议
 

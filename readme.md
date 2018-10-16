@@ -23,6 +23,12 @@
 <!-- repo = 'github/hub' -->
 <!-- commit = 'de684cb613c47572cc9ec90d4fd73eef80aef09c' -->
 <!-- time = '2018 9.6' -->
+翻译的原文 | 与日期 | 最新更新 | 更多
+---|---|---|---
+[commit] | ⏰ 2018 9.6 | ![last] | [中文翻译][translate-list]
+
+[last]: https://img.shields.io/github/last-commit/github/hub.svg
+[commit]: https://github.com/github/hub/tree/de684cb613c47572cc9ec90d4fd73eef80aef09c
 
 <!-- doc-templite END generated -->
 

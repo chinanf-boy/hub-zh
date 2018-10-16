@@ -2,17 +2,20 @@
 
 ## 命令简介
 
-- "hub" [`-noop`] <COMMAND> [<OPTIONS>]
-- "hub alias" [`-s`][<shell>]
-- [hub-help](hub-help.1.zh.md) - <COMMAND>
+- **hub** `[-noop] <COMMAND> [<OPTIONS>]`
+- **hub alias** `[-s][<shell>]`
+- [hub-help](hub-help.1.zh.md) - `<COMMAND>`
 
 ## DESCRIPTION
 
-hub 是一个 Git 包装工具 ,为了扩展与额外的功能,让它更好的在 GitHub 工作.
+hub 是一个 Git 包装工具, 扩展与带有额外的功能,让它更好的在 GitHub 工作.
 
 ## 命令
 
-可分为两组: al- 所有这些都是在 Git 现成的, hub 扩展了和 hub 提供的是 cus-.
+可分为两组: 
+
+- 扩展: 所有这些都是在 Git 现成的, 
+- 新增: hub 扩展了和 hub 提供的是 cus-.
 
 ### 扩展的 git 命令
 

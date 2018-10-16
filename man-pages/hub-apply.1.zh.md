@@ -2,11 +2,11 @@
 
 ## 命令简介
 
-`hub apply` <GITHUB-URL>
+**hub apply** `<GITHUB-URL>`
 
 ## 选项
 
-- \<Github-URL>:一个在 GUTHUB 上的提交请求-pull-request 或 commit 的 URL.
+- `<GITHUB-URL>`:一个在 GUTHUB 上的提交请求-pull-request 或 commit 的 URL.
 
 ## 例子
 

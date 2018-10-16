@@ -2,13 +2,13 @@
 
 ## 命令简介
 
-`hub ci-status` [-v][<commit>]
+**hub ci-status** `[-v][\<COMMIT\>]`
 
 ## 选项
 
-- -v:打印所有状态检查和 URL 的详细报告.
+- `-v`:打印所有状态检查和 URL 的详细报告.
 
-- <COMMIT>一个提交或分支名称(默认:"HEAD").
+- `<COMMIT>`: 一个提交或分支名称(默认:"HEAD").
 
 可能的输出和退出状态:
 

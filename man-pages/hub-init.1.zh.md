@@ -2,11 +2,11 @@
 
 ## 命令简介
 
-`hub init` -g
+****hub init**** `-g`
 
 ## 选项
 
-- -g:在本地初始化存储库后,添加"origin"远程指向 Github 上的"<USER>/<REPO>"存储库.
+- `-g`:在本地初始化存储库后,添加"origin"远程指向 Github 上的"<USER>/<REPO>"存储库.
 
 ```
 <USER>  是你的 GitHub 用户名, 而 <REPO>则是当前工作目录的名称.

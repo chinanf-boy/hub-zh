@@ -2,13 +2,14 @@
 
 ## 命令简介
 
-`hub remote` add [-p][<options>] <USER>[/<REPOSITORY>] `hub re- mote` set-url [-p][<options>] <NAME> <USER>[/<REPOSITORY>]
+- **hub remote add**  `[-p][<options>] <USER>[/<REPOSITORY>] `
+- **hub remote set-url**  `[-p][<options>] <NAME> <USER>[/<REPOSITORY>]`
 
 ## 选项
 
-- -p:(已弃用)) 使用"SSH:"协议.远程 URL
+- `-p`:(已弃用)) 使用"SSH:"协议.远程 URL
 
-- <USER>[/<REPOSITORY>] 如果<USER>是"origin",那个值将是你的 Github 用户名.<REPOSITORY>默认为当前工作目录的名称.
+- `<USER>[/<REPOSITORY>]`: 如果`<USER>`是"origin",那个值将是你的 Github 用户名.`<REPOSITORY>`默认为当前工作目录的名称.
 
 ## 例子
 
