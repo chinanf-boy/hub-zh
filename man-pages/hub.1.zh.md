@@ -75,12 +75,11 @@ Hub 在第一次需要访问 API 时,将按照提示输入 GitHub 用户名和�
 
 为了避免被提示,使用"GITHUB_USER"和"GITHUB_PASSWORD"环境变量.
 
-或者,您可以提供"GITHUB_TOKEN",一个访问令牌.**存储库**权限.这将不会写到"~/.con-
-fig/hub".
+或者,您可以提供"GITHUB_TOKEN",一个访问令牌.**存储库**权限.这将不会写到"~/.config/hub".
 
 ### 用 HTTPS 替换 git 协议
 
-如果您更喜欢 HTTPS 协议用于 git 操作,那么您可以通过配置 hub 来生成"https\:"-URLs,而不是"git:"或"ssh:":
+如果您更喜欢 HTTPS 协议用于 git 操作,那么您可以通过配置 hub 来生成`https\:-URLs`,而不是"git:"或"ssh:":
 
 ```
 $ git config -global hub.protocol https
@@ -104,21 +103,21 @@ $ GITHUB_HOST=my.git.org git clone myproject
 
 ### 环境变量
 
-- "HUB_VERBOSE": hub 命令启用 verbose 的输出.
+- `HUB_VERBOSE`: hub 命令启用 verbose 的输出.
 
-- "HUB_CONFIG":读取和存储 hub 配置的文件路径.如果存在"XDG_CONFIG_HOME",则默认值为"$XDG_CONFIG_HOME/hub"; 否则为"$HOME/.config/hub".每个 XDG 基础目录规范,也可在"XDG_CONFIG_DIRS"中搜索配置文件.
+- `HUB_CONFIG`:读取和存储 hub 配置的文件路径.如果存在"XDG_CONFIG_HOME",则默认值为"$XDG_CONFIG_HOME/hub"; 否则为"$HOME/.config/hub".每个 XDG 基础目录规范,也可在"XDG_CONFIG_DIRS"中搜索配置文件.
 
-- "`HUB_PROTOCOL`":使用其中一个"https|ssh|git" 作为 git clone/push 的首选协议.
+- `HUB_PROTOCOL`:使用其中一个"https|ssh|git" 作为 git clone/push 的首选协议.
 
 - `GITHUB_TOKEN`:用于 Github API 请求的 OAuth 令牌.
 
 ## BUGS
 
-[HTTPS://GithubCOM/github/Hub/问题](https://github.com/github/hub/issues)
+[https://github.com/github/hub/问题](https://github.com/github/hub/issues)
 
 ## 作者
 
-[HTTPS://GithubCOM/Github/HUB/贡献者](https://github.com/github/hub/contributors)
+[https://github.com/github/hub/贡献者](https://github.com/github/hub/contributors)
 
 ## 更多
 
