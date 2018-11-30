@@ -34,8 +34,8 @@
 
 - [x] readme.md
 - [x] etc
-- [x] man-pages
-    - [x] [./man-pages/hub.1.zh.md](./man-pages/hub.1.zh.md)
+- [x] src
+    - [x] [./src/hub.1.zh.md](./src/hub.1.zh.md)
 
 ### 贡献
 
@@ -82,7 +82,7 @@ $ git clone git://github.com/rtomayko/tilt.git
 
 hub是最好换成`git`别名,所以你可以在shell中输入`$ git <command>`和得到所有有用的`hub`功能.请参阅下面的"别名".
 
-看到[使用文档](./man-pages/hub.1.zh.md)获取所有命令及其参数的列表.
+看到[使用文档](./src/hub.1.zh.md)获取所有命令及其参数的列表.
 
 ## 安装
 
